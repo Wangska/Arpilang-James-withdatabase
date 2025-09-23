@@ -1,5 +1,10 @@
 {
+  "name": "split-easy-server",
+  "version": "1.0.0",
+  "description": "Backend server for SplitEasy bill splitting application",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {
