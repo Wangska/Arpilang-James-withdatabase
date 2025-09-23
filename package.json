@@ -1,0 +1,23 @@
+{
+  "name": "split-easy-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack bill splitting application with React frontend and Node.js backend",
+  "private": true,
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd split-easy-flex && npm run dev\"",
+    "build": "cd split-easy-flex && npm run build",
+    "install-all": "cd server && npm install && cd ../split-easy-flex && npm install"
+  },
+  "workspaces": [
+    "server",
+    "split-easy-flex"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
